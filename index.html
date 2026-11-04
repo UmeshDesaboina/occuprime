@@ -1,1 +1,497 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OccuPrime Healthcare | Industrial Health, Safety & Compliance</title>
+<meta name="description" content="OccuPrime Healthcare manages onsite Occupational Health Centers, statutory medical checkups, FMO advisory, industrial ambulances and ISO 45001 compliance audits for factories and corporate facilities.">
+<meta name="theme-color" content="#06121f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("op-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="features.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo" aria-label="OccuPrime Healthcare">
+      <span class="logo-mark">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M16 3l11 4v8c0 7-4.5 11.5-11 14C9.5 26.500 5 22 5 15V7l11-4z" stroke="currentColor" stroke-width="2"/><path d="M16 10v10M11 15h10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </span>
+      <span class="logo-text">Occu<b>Prime</b><small>Healthcare</small></span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#results">Results</a>
+        <a href="#tools">Free Tools</a>
+        <a href="#blog">Insights</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Get a Quote</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.800A9 9 0 1111.200 3a7 7 0 009.800 9.800z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></svg>
+      </button>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="particles"></canvas>
+  <div class="hero-bg" data-cld="hero" data-w="1920" data-q="auto:eco"></div>
+  <div class="hero-overlay"></div>
+  <div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow reveal"><i class="pulse"></i> Trusted Industrial Health Partner</span>
+      <h1 class="reveal d1">Healthier workforce.<br><span class="grad">Safer plants.</span><br>Zero compliance worries.</h1>
+      <p class="lead reveal d2">We set up, staff and run onsite Occupational Health Centers, conduct statutory medical examinations, and keep your facility audit-ready for ISO 45001 and factory law compliance.</p>
+      <div class="hero-actions reveal d3">
+        <a href="#contact" class="btn btn-primary">Book a Free Consultation <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#services" class="btn btn-ghost">Explore Services</a>
+      </div>
+      <ul class="hero-badges reveal d4">
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> Factories Act Compliant</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> ISO 45001 Aligned</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> 24x7 Emergency Response</li>
+      </ul>
+    </div>
+    <div class="hero-visual reveal d2">
+      <div class="glass-card hero-card tilt">
+        <div class="hc-head"><span class="live"></span> Live OHC Dashboard</div>
+        <div class="hc-row"><span>Employees Screened</span><b data-count="1284" data-suffix="">0</b></div>
+        <div class="bar"><i style="--w:92%"></i></div>
+        <div class="hc-row"><span>Compliance Score</span><b data-count="98" data-suffix="%">0</b></div>
+        <div class="bar"><i style="--w:98%"></i></div>
+        <div class="hc-row"><span>Avg. Ambulance Response</span><b data-count="8" data-suffix=" min">0</b></div>
+        <div class="bar"><i style="--w:80%"></i></div>
+        <div class="ecg">
+          <svg viewBox="0 0 300 60" preserveAspectRatio="none"><path d="M0 30 H60 L70 30 L80 8 L92 52 L104 30 H150 L160 30 L170 14 L180 46 L190 30 H300"/></svg>
+        </div>
+      </div>
+      <div class="glass-card float-chip chip-1"><span class="chip-ic">✚</span> Onsite Doctor Available</div>
+      <div class="glass-card float-chip chip-2"><span class="chip-ic">🚑</span> Ambulance Ready</div>
+    </div>
+  </div>
+  <a href="#stats" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="container stats-grid">
+    <div class="stat reveal"><b data-count="150" data-suffix="+">0</b><span>Facilities Served</span></div>
+    <div class="stat reveal d1"><b data-count="250000" data-suffix="+">0</b><span>Medical Examinations</span></div>
+    <div class="stat reveal d2"><b data-count="120" data-suffix="+">0</b><span>Medical Professionals</span></div>
+    <div class="stat reveal d3"><b data-count="99" data-suffix="%">0</b><span>Audit Success Rate</span></div>
+  </div>
+</section>
+
+<!-- TRUST MARQUEE -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Factories Act</span><span>ISO 45001</span><span>Occupational Health</span><span>Industrial Hygiene</span><span>Toxicology Risk</span><span>Emergency Response</span><span>EHS Audits</span><span>Pre-Employment Checkups</span>
+    <span>Factories Act</span><span>ISO 45001</span><span>Occupational Health</span><span>Industrial Hygiene</span><span>Toxicology Risk</span><span>Emergency Response</span><span>EHS Audits</span><span>Pre-Employment Checkups</span>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>End-to-end occupational health, <span class="grad">under one roof</span></h2>
+      <p>From onsite clinics to emergency fleets and certification audits, we handle every layer of workplace health and safety so your team can focus on production.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card tilt reveal">
+        <div class="sc-img" data-cld="ohc" data-w="800"></div>
+        <div class="sc-body">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13M9 21v-6h6v6M12 8v4M10 10h4"/></svg></div>
+          <h3>Turnkey OHC Management</h3>
+          <p>We design, set up, staff and operate your onsite Occupational Health Center with qualified medical officers and nursing personnel.</p>
+          <ul><li>Layout, equipment and pharmacy setup</li><li>Doctors, nurses and paramedics on roster</li><li>Digital health records and MIS reports</li></ul>
+        </div>
+      </article>
+
+      <article class="service-card tilt reveal d1">
+        <div class="sc-img" data-cld="checkup" data-w="800"></div>
+        <div class="sc-body">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 3h6v4H9zM6 5H5a2 2 0 00-2 2v13a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2h-1M9 14l2 2 4-4"/></svg></div>
+          <h3>Statutory Medical Checkups</h3>
+          <p>Pre-employment, periodic and exit health examinations carried out as required under factory acts and labour laws.</p>
+          <ul><li>Audiometry, spirometry, vision and X-ray</li><li>Form 32 / 33 and certification support</li><li>Trend analytics for workforce health</li></ul>
+        </div>
+      </article>
+
+      <article class="service-card tilt reveal d2">
+        <div class="sc-img" data-cld="fmo" data-w="800"></div>
+        <div class="sc-body">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 008 0V3M10 13v3a5 5 0 0010 0v-2M20 12a2 2 0 100-4 2 2 0 000 4z"/></svg></div>
+          <h3>FMO Advisory</h3>
+          <p>Expert Factory Medical Officer guidance on industrial hygiene, occupational disease surveillance and toxicological risk.</p>
+          <ul><li>Hazard and exposure assessment</li><li>Occupational disease surveillance</li><li>Regulator and inspector liaison</li></ul>
+        </div>
+      </article>
+
+      <article class="service-card tilt reveal d1">
+        <div class="sc-img" data-cld="ambulance" data-w="800"></div>
+        <div class="sc-body">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 17V7h12v10M14 10h4l4 4v3h-3M7 10v4M5 12h4"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+          <h3>Ambulance Fleet Operations</h3>
+          <p>Fully equipped industrial ambulances with trained EMTs for rapid response across your plant and campus.</p>
+          <ul><li>BLS / ALS equipped vehicles</li><li>Certified EMTs and drivers</li><li>Mock drills and response protocols</li></ul>
+        </div>
+      </article>
+
+      <article class="service-card tilt reveal d2">
+        <div class="sc-img" data-cld="audit" data-w="800"></div>
+        <div class="sc-body">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6l8-3zM8.500 12l2.500 2.500 4.500-5"/></svg></div>
+          <h3>EHS &amp; ISO 45001 Audits</h3>
+          <p>Rigorous internal audits of your OH&amp;S management system to cut operational risk and get certification-ready.</p>
+          <ul><li>Gap analysis against ISO 45001</li><li>Corrective action tracking</li><li>Management review reports</li></ul>
+        </div>
+      </article>
+
+      <article class="service-card cta-card reveal d3">
+        <div class="cta-inner">
+          <h3>Need a custom plan for your facility?</h3>
+          <p>Tell us your headcount, shifts and hazards. We will design the right package.</p>
+          <a href="#contact" class="btn btn-primary">Talk to an Expert <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section section-dark" id="why">
+  <div class="container why-grid">
+    <div class="why-visual reveal">
+      <div class="why-img" data-cld="team" data-w="900"></div>
+      <div class="glass-card why-badge"><b data-count="10" data-suffix="+">0</b><span>Years of Industrial<br>Health Expertise</span></div>
+    </div>
+    <div class="why-copy">
+      <span class="eyebrow reveal">Why OccuPrime</span>
+      <h2 class="reveal d1">Compliance is the minimum. <span class="grad">Wellbeing is the goal.</span></h2>
+      <p class="reveal d2">We combine clinical depth with an operational mindset, so health programs run smoothly inside real production environments.</p>
+      <div class="feature-list">
+        <div class="feature reveal d1"><i>01</i><div><h4>Qualified, verified professionals</h4><p>Registered medical officers, nurses and EMTs with industrial experience.</p></div></div>
+        <div class="feature reveal d2"><i>02</i><div><h4>Audit-ready documentation</h4><p>Registers, certificates and records maintained to inspection standards.</p></div></div>
+        <div class="feature reveal d3"><i>03</i><div><h4>Data-driven health insights</h4><p>Monthly dashboards that surface trends before they become incidents.</p></div></div>
+        <div class="feature reveal d4"><i>04</i><div><h4>Single point of accountability</h4><p>One partner for clinic, checkups, ambulance and audits.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How We Work</span>
+      <h2>From first call to <span class="grad">fully compliant</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="step reveal"><span class="num">1</span><h4>Site Assessment</h4><p>We study your processes, headcount, shifts and hazards.</p></div>
+      <div class="step reveal d1"><span class="num">2</span><h4>Tailored Proposal</h4><p>A clear scope, staffing plan and transparent pricing.</p></div>
+      <div class="step reveal d2"><span class="num">3</span><h4>Setup &amp; Deployment</h4><p>OHC, team and ambulance mobilised within agreed timelines.</p></div>
+      <div class="step reveal d3"><span class="num">4</span><h4>Operate &amp; Report</h4><p>Daily operations with monthly MIS and compliance tracking.</p></div>
+      <div class="step reveal d4"><span class="num">5</span><h4>Audit &amp; Improve</h4><p>Periodic audits and continuous improvement actions.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS / CASE STUDIES (sample figures: replace with verified client results in blog-data.js) -->
+<section class="section section-dark" id="results">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Proven Results</span>
+      <h2>Real impact on <span class="grad">health, safety and audits</span></h2>
+      <p>See how structured occupational health programmes translate into measurable outcomes on the plant floor.</p>
+    </div>
+    <div class="tabs-row reveal" id="caseTabs" role="tablist"></div>
+    <div id="casePanel" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- FREE TOOLS -->
+<section class="section" id="tools">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Free Tools</span>
+      <h2>Plan smarter with <span class="grad">instant insights</span></h2>
+      <p>Estimate the right occupational health setup for your facility, or check how audit-ready you are in under two minutes.</p>
+    </div>
+    <div class="tabs-row reveal" role="tablist">
+      <button type="button" class="tab-btn tool-tab active" data-tool="estimator">OHC Estimator</button>
+      <button type="button" class="tab-btn tool-tab" data-tool="assess">Compliance Self-Check</button>
+    </div>
+
+    <div class="tool-panel active" id="tool-estimator">
+      <div class="est-grid">
+        <div class="est-controls glass-card">
+          <h3>Size your Occupational Health Centre</h3>
+          <p class="muted sm">Adjust the inputs to see an indicative staffing and resource plan.</p>
+          <div class="ctrl">
+            <label class="t" for="wf"><span>Total workforce</span><output id="wfVal">500</output></label>
+            <input type="range" id="wf" min="25" max="5000" step="25" value="500">
+          </div>
+          <div class="ctrl">
+            <span class="t">Process hazard level</span>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="hazard" value="low"><span>Low · assembly, offices</span></label>
+              <label class="chip"><input type="radio" name="hazard" value="medium" checked><span>Medium · machining, fabrication</span></label>
+              <label class="chip"><input type="radio" name="hazard" value="high"><span>High · chemicals, foundry, dust</span></label>
+            </div>
+          </div>
+          <div class="ctrl">
+            <span class="t">Operating shifts</span>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="shifts" value="1"><span>1 shift</span></label>
+              <label class="chip"><input type="radio" name="shifts" value="2" checked><span>2 shifts</span></label>
+              <label class="chip"><input type="radio" name="shifts" value="3"><span>3 shifts (24x7)</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="est-results glass-card">
+          <div class="res-head"><h3>Recommended setup</h3><span class="badge">Indicative</span></div>
+          <div class="res-grid">
+            <div class="res-tile"><b data-k="mo">0</b><span>Medical Officers</span><small data-s="mo"></small></div>
+            <div class="res-tile"><b data-k="nurse">0</b><span>Nursing Staff</span><small data-s="nurse"></small></div>
+            <div class="res-tile"><b data-k="emt">0</b><span>EMTs / Paramedics</span><small data-s="emt"></small></div>
+            <div class="res-tile"><b data-k="amb">0</b><span>Ambulances</span><small data-s="amb"></small></div>
+            <div class="res-tile"><b data-k="exams">0</b><span>Exams per year</span><small data-s="exams"></small></div>
+            <div class="res-tile"><b data-k="area">0</b><span>OHC Area</span><small data-s="area"></small></div>
+          </div>
+          <p class="disclaimer">This is an indicative estimate. Final requirements depend on your site assessment, process hazards and the rules applicable in your state.</p>
+          <button type="button" class="btn btn-primary" id="estCta">Get a detailed proposal on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-panel" id="tool-assess">
+      <div class="assess glass-card">
+        <div class="assess-top"><b>Answer 8 quick questions</b><span id="aCount">0 of 8 answered</span></div>
+        <div class="assess-bar"><i id="aBar"></i></div>
+        <div id="qList"></div>
+        <div class="result" id="aResult" hidden>
+          <div class="ring">
+            <svg viewBox="0 0 120 120"><circle class="rt" cx="60" cy="60" r="54"/><circle class="rf" id="ringFill" cx="60" cy="60" r="54"/></svg>
+            <div class="ring-text"><b id="ringPct">0%</b><span id="ringTier"></span></div>
+          </div>
+          <div class="res-info">
+            <h4 id="aTitle"></h4>
+            <p id="aMsg"></p>
+            <ul class="gaps" id="aGaps"></ul>
+            <div class="res-actions">
+              <button type="button" class="btn btn-primary" id="aCta">Discuss my results on WhatsApp</button>
+              <button type="button" class="btn btn-ghost" id="aReset">Retake</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section section-dark" id="industries">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Industries</span>
+      <h2>Built for <span class="grad">high-risk, high-output</span> environments</h2>
+    </div>
+    <div class="industry-grid">
+      <div class="industry reveal"><div data-cld="ind1" data-w="600"></div><span>Manufacturing Plants</span></div>
+      <div class="industry reveal d1"><div data-cld="ind2" data-w="600"></div><span>Chemical &amp; Pharma</span></div>
+      <div class="industry reveal d2"><div data-cld="ind3" data-w="600"></div><span>Automotive &amp; Engineering</span></div>
+      <div class="industry reveal d3"><div data-cld="ind4" data-w="600"></div><span>Corporate Campuses</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Client Voices</span>
+      <h2>Trusted by <span class="grad">plant heads</span> and EHS leaders</h2>
+    </div>
+    <div class="slider reveal" id="slider">
+      <div class="slides">
+        <blockquote class="slide active"><p>"OccuPrime took over our OHC within two weeks. Our statutory records are now spotless, and our last factory inspection had zero observations."</p><footer><b>Plant Head</b><span>Automotive Components Manufacturer</span></footer></blockquote>
+        <blockquote class="slide"><p>"Their ambulance team and mock drills changed how our workforce responds to emergencies. Response times have dropped significantly."</p><footer><b>EHS Manager</b><span>Chemical Processing Unit</span></footer></blockquote>
+        <blockquote class="slide"><p>"The ISO 45001 gap audit was thorough and practical. We cleared certification on the first attempt."</p><footer><b>VP, Operations</b><span>Engineering &amp; Fabrication Group</span></footer></blockquote>
+      </div>
+      <div class="slider-controls">
+        <button id="prev" aria-label="Previous">←</button>
+        <div class="dots" id="dots"></div>
+        <button id="next" aria-label="Next">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / INSIGHTS -->
+<section class="section section-dark" id="blog">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Insights</span>
+      <h2>Knowledge for <span class="grad">safer workplaces</span></h2>
+      <p>Practical guidance from our clinical and EHS teams on compliance, occupational health and emergency readiness.</p>
+    </div>
+    <div class="blog-toolbar reveal">
+      <div class="filters" id="blogFilters"></div>
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.500-3.500"/></svg>
+        <input type="search" id="blogSearch" placeholder="Search articles..." aria-label="Search articles">
+      </div>
+    </div>
+    <div class="blog-grid" id="blogGrid"></div>
+    <p class="blog-empty" id="blogEmpty" hidden>No articles match your search. Try a different keyword or category.</p>
+
+    <form class="newsletter glass-card reveal" id="newsForm" novalidate>
+      <div><h3>Get safety insights in your inbox</h3><p>One practical article a month. No spam.</p></div>
+      <div class="news-form">
+        <input type="email" id="newsEmail" placeholder="you@company.com" aria-label="Email address">
+        <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container faq-wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common <span class="grad">questions</span></h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item reveal"><button class="faq-q">What is an Occupational Health Centre and is it mandatory?<i></i></button><div class="faq-a"><p>An OHC is an onsite medical facility for workers. Requirements depend on your state factory rules, hazard category and headcount. We will confirm what applies to your facility during assessment.</p></div></div>
+      <div class="faq-item reveal d1"><button class="faq-q">Which medical examinations do you conduct?<i></i></button><div class="faq-a"><p>Pre-employment, periodic and exit examinations, including vision, audiometry, spirometry, blood and urine tests, X-ray and job-specific tests depending on exposure.</p></div></div>
+      <div class="faq-item reveal d2"><button class="faq-q">How quickly can you set up at our plant?<i></i></button><div class="faq-a"><p>Timelines depend on scope. Staffing and basic operations can often begin within a few weeks of finalising the proposal.</p></div></div>
+      <div class="faq-item reveal d3"><button class="faq-q">Do you support us during factory inspections?<i></i></button><div class="faq-a"><p>Yes. We maintain statutory registers and certificates, and our FMO advisory team can support you during inspector visits.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <span class="eyebrow reveal">Get in Touch</span>
+      <h2 class="reveal d1">Let's make your workplace <span class="grad">safer</span></h2>
+      <p class="reveal d2">Share a few details and we will continue the conversation on WhatsApp for a quick, personal response.</p>
+      <ul class="contact-points">
+        <li class="reveal d1"><span>💬</span><div><b>WhatsApp</b><a href="#" id="waDirect" target="_blank" rel="noopener">Chat with us directly</a></div></li>
+        <li class="reveal d2"><span>⏱</span><div><b>Response time</b>Within business hours, usually under 1 hour</div></li>
+        <li class="reveal d3"><span>🛡</span><div><b>Confidential</b>Your facility details stay private</div></li>
+      </ul>
+    </div>
+
+    <form class="contact-form glass-card reveal d2" id="contactForm" novalidate>
+      <h3>Request a Free Consultation</h3>
+      <div class="field-row">
+        <div class="field"><input type="text" id="name" name="name" placeholder=" " required><label for="name">Full Name *</label><small class="err"></small></div>
+        <div class="field"><input type="text" id="company" name="company" placeholder=" " required><label for="company">Company / Plant *</label><small class="err"></small></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><input type="tel" id="phone" name="phone" placeholder=" " required><label for="phone">Phone Number *</label><small class="err"></small></div>
+        <div class="field"><input type="email" id="email" name="email" placeholder=" "><label for="email">Email (optional)</label><small class="err"></small></div>
+      </div>
+      <div class="field-row">
+        <div class="field select">
+          <select id="service" name="service" required>
+            <option value="" disabled selected></option>
+            <option>Turnkey OHC Management</option>
+            <option>Statutory Medical Checkups</option>
+            <option>FMO Advisory</option>
+            <option>Ambulance Fleet Operations</option>
+            <option>EHS &amp; ISO 45001 Audit</option>
+            <option>Multiple / Not sure yet</option>
+          </select><label for="service">Service Required *</label><small class="err"></small>
+        </div>
+        <div class="field select">
+          <select id="size" name="size">
+            <option value="" disabled selected></option>
+            <option>Below 100 employees</option>
+            <option>100 - 500 employees</option>
+            <option>500 - 2000 employees</option>
+            <option>2000+ employees</option>
+          </select><label for="size">Workforce Size</label><small class="err"></small>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field"><input type="date" id="date" name="date" placeholder=" "><label for="date">Preferred site-visit date</label></div>
+        <div class="field select">
+          <select id="time" name="time">
+            <option value="" disabled selected></option>
+            <option>Morning (9am - 12pm)</option>
+            <option>Afternoon (12pm - 4pm)</option>
+            <option>Evening (4pm - 7pm)</option>
+          </select><label for="time">Best time to call</label>
+        </div>
+      </div>
+      <div class="field"><textarea id="message" name="message" rows="4" placeholder=" "></textarea><label for="message">Tell us about your requirement</label></div>
+      <button type="submit" class="btn btn-primary btn-block">
+        <svg viewBox="0 0 24 24" class="wa"><path d="M12 2a10 10 0 00-8.600 15L2 22l5.200-1.400A10 10 0 1012 2zm5.200 14.200c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.100-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.300 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2 1.300 2.300 1.400.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.700-.1 1.300z"/></svg>
+        Send via WhatsApp
+      </button>
+      <p class="form-note">You will be redirected to WhatsApp with your details pre-filled.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo"><span class="logo-mark"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3l11 4v8c0 7-4.500 11.500-11 14C9.500 26.500 5 22 5 15V7l11-4z" stroke="currentColor" stroke-width="2"/><path d="M16 10v10M11 15h10" stroke="currentColor" stroke-width="2.400" stroke-linecap="round"/></svg></span><span class="logo-text">Occu<b>Prime</b><small>Healthcare</small></span></a>
+      <p class="muted">Industrial health, safety and compliance partner for factories, plants and corporate facilities.</p>
+    </div>
+    <div><h5>Services</h5><a href="#services">OHC Management</a><a href="#services">Medical Checkups</a><a href="#services">FMO Advisory</a><a href="#services">Ambulance Fleet</a><a href="#services">ISO 45001 Audits</a></div>
+    <div><h5>Company</h5><a href="#why">Why Us</a><a href="#process">Process</a><a href="#results">Results</a><a href="#tools">Free Tools</a><a href="#blog">Insights</a><a href="#faq">FAQ</a></div>
+    <div><h5>Connect</h5><a href="#contact">Request a Quote</a><a href="#" id="waFooter" target="_blank" rel="noopener">WhatsApp Us</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span id="year"></span> OccuPrime Healthcare. All rights reserved.</span><span>Safer workplaces. Healthier people.</span></div>
+</footer>
+
+<!-- Article reader -->
+<div class="modal" id="postModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Article">
+  <div class="modal-backdrop" data-close></div>
+  <article class="modal-card" id="modalCard" tabindex="-1">
+    <div class="modal-progress"><i id="modalProgress"></i></div>
+    <button type="button" class="modal-close" data-close aria-label="Close article">✕</button>
+    <div class="modal-scroll" id="modalScroll">
+      <div class="modal-hero" id="modalHero"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </article>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<a href="#" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.600 15L2 22l5.200-1.400A10 10 0 1012 2zm5.200 14.200c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.100-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.300 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2 1.300 2.300 1.400.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.700-.1 1.300z"/></svg>
+</a>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="blog-data.js"></script>
+<script src="script.js"></script>
+<script src="features.js"></script>
+</body>
+</html>
